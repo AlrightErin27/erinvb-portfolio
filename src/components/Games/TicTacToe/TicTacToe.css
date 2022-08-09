@@ -1,0 +1,24 @@
+.TTT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.sq {
+  cursor: pointer;
+  font-size: 10rem;
+  height: 12rem;
+  width: 12rem;
+  background-color: rgba(255, 255, 255, 0.977);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 9px 9px 0 0;
+  border-radius: 10px;
+}
+.sq:hover {
+  background-color: rgba(184, 166, 214, 0.215);
+}
