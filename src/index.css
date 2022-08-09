@@ -1,13 +1,217 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+/* font-family: 'Rock Salt', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap");
+/* font-family: "Josefin Slab", serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+/* font-family: 'Unica One', cursive; */
+
+* {
+  background-color: rgba(254, 233, 226, 255);
+  font-family: "Josefin Slab", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HOME PAGE */
+.H-header {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0rem;
+}
+#H-header-p {
+  font-family: "Rock Salt", cursive;
+  font-size: 2rem;
+  color: rgb(0, 42, 255);
+}
+#H-about {
+  text-align: center;
+  margin-top: -1.5rem;
+  font-size: 1.5rem;
+  font-family: "Unica One", cursive;
+}
+.H-lowerPg {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#H-logo-container {
+  display: flex;
+  justify-content: center;
+}
+#H-logo {
+  height: 40rem;
+  width: 40rem;
+}
+#H-list-title {
+  font-family: "Josefin Slab", serif;
+  font-family: "Unica One", cursive;
+  background-color: transparent;
+}
+.Home ul {
+  width: 25vw;
+  position: absolute;
+  background-color: transparent;
+}
+.Home li {
+  font-family: "Unica One", cursive;
+  display: inline;
+  background-color: transparent;
+}
+.rotate {
+  animation: rotation 20s infinite;
+  z-index: 0;
+  background-color: transparent;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.linear {
+  animation-timing-function: linear;
+}
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+/* NAV BAR */
+nav {
+  /* border: 1px solid rgba(254, 91, 56, 255); */
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgba(240, 248, 255, 0.441);
+}
+.nav-link {
+  padding: 0 4rem 0 4rem;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(254, 91, 56, 255);
+  font-family: "Unica One", cursive;
+}
+.nav-link:hover {
+  color: rgb(155, 52, 0);
+}
+
+/* RESUME PAGE */
+.resume-page {
+  display: flex;
+  justify-content: center;
+}
+.r-fixed {
+  position: fixed;
+  right: 5rem;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+#r-logo {
+  background: transparent;
+  height: 15rem;
+  width: 15rem;
+  animation: rotation 20s infinite;
+}
+.r-download {
+  color: rgb(0, 17, 255);
+  font-size: 1.4rem;
+  background: rgba(0, 0, 0, 0.185);
+  padding: 12px;
+  text-align: center;
+  border-radius: 12px;
+}
+.r-download:hover {
+  background-color: rgb(61, 61, 61);
+  color: rgb(255, 255, 255);
+}
+.resume {
+  padding: 0.5rem 7rem 7rem 7rem;
+  width: 60vw;
+}
+#r-job-title {
+  font-size: 2rem;
+  margin: auto;
+  color: rgba(254, 91, 56, 255);
+  font-family: "Unica One", cursive;
+}
+.r-download-icon {
+  height: 1.3rem;
+  filter: invert();
+  padding-right: 0.5rem;
+  background-color: transparent;
+}
+.r-top {
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+.r-name {
+  font-family: "Rock Salt", cursive;
+  font-size: 2rem;
+  margin: auto;
+  color: rgb(0, 42, 255);
+}
+.r-link {
+  margin: 0 0.5rem 0 0.5rem;
+  font-family: "Unica One", cursive;
+}
+.r-link:hover {
+  color: white;
+}
+.r-skills {
+  background-color: transparent;
+  font-family: inherit;
+  color: rgb(0, 0, 123);
+  font-weight: bold;
+  line-height: 1.3rem;
+}
+.r-header {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.495);
+  border-radius: 10px;
+  padding: 4px 0 4px 0;
+}
+.r-subheader {
+  font-size: 1.3rem;
+  background-color: transparent;
+  font-weight: bold;
+  color: rgb(0, 0, 123);
+  background-color: transparent;
+}
+.r-linkedin-icon {
+  height: 1.3rem;
+  padding-right: 0.3rem;
+}
+.r-github-icon {
+  height: 1.3rem;
+  filter: invert();
+  background-color: transparent;
+}
+.r-edu-local {
+  background-color: transparent;
+  margin: -0.4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 123);
+}
+.r-text {
+  color: rgb(0, 0, 123);
+  font-weight: bold;
+  background-color: transparent;
+}
+/* PROJECTS PAGE */
+.pro-con {
+  display: flex;
+}
+.cone {
+  background-color: transparent;
 }
