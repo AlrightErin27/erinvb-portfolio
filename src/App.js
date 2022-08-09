@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  // Redirect,
+  Redirect,
 } from "react-router-dom";
 
 import Home from "./components/Home";
@@ -31,7 +31,7 @@ function App() {
           </Route>
         </Switch>
 
-        {/* <Redirect to="/home" /> */}
+        <Redirect to="/home" />
       </Router>
     </>
   );
