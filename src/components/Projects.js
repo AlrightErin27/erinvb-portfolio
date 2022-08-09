@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Cone from "../Images/cone.png";
 
 function Projects() {
@@ -9,8 +10,16 @@ function Projects() {
         <img src={Cone} alt="cone" className="cone" />
       </div>
       Projects:
-      <a href="https://castles-fi.herokuapp.com/login">The Castle Shop</a>
-      (Login: "Bárðr", ps: "2BorNot2B")
+      <>
+        <a href="https://castles-fi.herokuapp.com/login">The Castle Shop</a>
+        (Login: "Bárðr", ps: "2BorNot2B")
+      </>
+      <br />
+      <>
+        <NavLink to="/tictactoe" style={{ textDecoration: "none" }}>
+          Tic Tac Toe
+        </NavLink>
+      </>
     </div>
   );
 }

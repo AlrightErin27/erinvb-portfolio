@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import TicTacToe from "./components/Games/TicTacToe/TicTacToe";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
 
           <Route path="/projects">
             <Projects />
+          </Route>
+
+          <Route path="/tictactoe">
+            <TicTacToe />
           </Route>
         </Switch>
 
