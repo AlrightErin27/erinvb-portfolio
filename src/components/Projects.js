@@ -20,6 +20,12 @@ function Projects() {
           Tic Tac Toe
         </NavLink>
       </>
+      <br />
+      <>
+        <NavLink to="/tetris" style={{ textDecoration: "none" }}>
+          Tetris
+        </NavLink>
+      </>
     </div>
   );
 }

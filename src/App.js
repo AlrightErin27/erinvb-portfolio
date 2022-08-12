@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import TicTacToe from "./components/Games/TicTacToe/TicTacToe";
+import Tetris from "./components/Games/Tetris/Tetris";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
 
           <Route path="/tictactoe">
             <TicTacToe />
+          </Route>
+
+          <Route path="/tetris">
+            <Tetris />
           </Route>
         </Switch>
       </Router>
