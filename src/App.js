@@ -36,7 +36,7 @@ function App() {
           </Route>
         </Switch>
 
-        <Redirect to="/home" />
+        {/* <Redirect to="/home" /> */}
       </Router>
     </>
   );

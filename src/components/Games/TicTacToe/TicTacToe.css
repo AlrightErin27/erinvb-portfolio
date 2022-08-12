@@ -1,24 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
 .TTT {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Shrikhand", cursive;
 }
-.grid {
+.TTT h1 {
+  display: flex;
+  gap: 1rem;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 0;
+}
+.t-t {
+  font-family: "Shrikhand", cursive;
+  color: rgb(0, 0, 195);
+}
+.t {
+  font-family: "Shrikhand", cursive;
+  color: rgb(220, 62, 0);
+}
+.game {
+  text-align: center;
+}
+.board {
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  background-color: black;
 }
-.sq {
-  cursor: pointer;
-  font-size: 10rem;
-  height: 12rem;
-  width: 12rem;
-  background-color: rgba(255, 255, 255, 0.977);
+.square {
+  height: 10rem;
+  width: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 9px 9px 0 0;
-  border-radius: 10px;
 }
-.sq:hover {
-  background-color: rgba(184, 166, 214, 0.215);
+.text {
+  font-family: "Shrikhand", cursive;
+  font-size: 6rem;
+  background-color: transparent;
+}
+#circle {
+  color: rgb(220, 62, 0);
+}
+#cross {
+  color: rgb(0, 0, 195);
+}
+.result {
+  text-align: center;
+}
+.result p {
+  font-family: "Shrikhand", cursive;
+  font-size: 5rem;
+}
+.g-btn {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.g-btn:hover {
+  background-color: rgba(220, 62, 0, 0.789);
 }
