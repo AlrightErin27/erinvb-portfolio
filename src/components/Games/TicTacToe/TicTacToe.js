@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./TicTacToe.css";
 import Square from "./Square";
 import Result from "./Result";
+import Exit from "./Exit";
 
 function TicTacToe() {
   const [player, setPlayer] = useState("x");
@@ -75,7 +76,7 @@ function TicTacToe() {
   //function runs constantly checking to see if a decision is made
   useEffect(() => {
     setWinner(decision());
-  });
+  }, [handleMove]);
 
   function reset() {
     setPositions(["", "", "", "", "", "", "", "", ""]);
@@ -116,9 +117,14 @@ function TicTacToe() {
                 );
               })}
             </div>
-            <button className="g-btn" onClick={reset}>
-              reset
-            </button>
+
+            <div className="btn-container">
+              <button className="g-btn" onClick={reset}>
+                reset
+              </button>
+
+              <Exit />
+            </div>
           </div>
         )}
       </div>
