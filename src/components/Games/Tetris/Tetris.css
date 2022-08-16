@@ -16,11 +16,40 @@ font-family: 'Kiwi Maru', serif; */
   align-items: center;
   font-family: "DynaPuff", cursive;
 }
-.board {
+.game {
   font-family: "Kiwi Maru", serif;
   font-size: 1.5rem;
   height: 90vh;
   width: 40%;
   color: white;
-  background-color: black;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.721);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.game p {
+  font-family: "Kiwi Maru", serif;
+  background-color: transparent;
+  color: white;
+  margin: 0;
+}
+.menu {
+  background-color: transparent;
+  font-family: "Kiwi Maru", serif;
+}
+.menu button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  font-family: "DynaPuff", cursive;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: rgb(23, 212, 155);
+  /* z-index: 100; */
+}
+.menu button:hover {
+  background-color: rgba(255, 255, 255, 0.515);
 }

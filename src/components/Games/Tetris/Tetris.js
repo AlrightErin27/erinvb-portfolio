@@ -1,11 +1,12 @@
 import "./tetris.css";
-import Board from "./Board";
+import Game from "./Game";
+// import Board from "./Board";
 
 function Tetris() {
   return (
     <div className="tetris">
       Tetris
-      <Board />
+      <Game rows={20} columns={10} />
     </div>
   );
 }
