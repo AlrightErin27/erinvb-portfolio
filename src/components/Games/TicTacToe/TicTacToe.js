@@ -105,7 +105,7 @@ function TicTacToe() {
           <Result reset={reset} winner={winner} />
         ) : (
           <div className="game">
-            <div className="board">
+            <div className="ttt-board">
               {positions.map((pst, idx) => {
                 return (
                   <Square

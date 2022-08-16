@@ -1,7 +1,13 @@
-import "./Tetris.css";
+import "./tetris.css";
+import Board from "./Board";
 
 function Tetris() {
-  return <div>Tetris</div>;
+  return (
+    <div className="tetris">
+      Tetris
+      <Board />
+    </div>
+  );
 }
 
 export default Tetris;

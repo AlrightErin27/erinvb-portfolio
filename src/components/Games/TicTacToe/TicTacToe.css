@@ -25,7 +25,7 @@
 .game {
   text-align: center;
 }
-.board {
+.ttt-board {
   margin-top: 10px;
   display: grid;
   grid-template-columns: auto auto auto;
