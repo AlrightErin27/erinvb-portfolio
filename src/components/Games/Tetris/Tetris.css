@@ -53,3 +53,60 @@ font-family: 'Kiwi Maru', serif; */
 .menu button:hover {
   background-color: rgba(255, 255, 255, 0.515);
 }
+.game-on {
+  background-color: transparent;
+  font-family: "Kiwi Maru", serif;
+}
+.board {
+  background-color: transparent;
+  font-family: "Kiwi Maru", serif;
+}
+.board-cell {
+  background-color: rgba(0, 255, 55, 0.254);
+  font-family: "Kiwi Maru", serif;
+  width: auto;
+  border-radius: 6px;
+  position: relative;
+}
+.sparkle {
+  background-color: transparent;
+  font-family: "Kiwi Maru", serif;
+  position: absolute;
+  z-index: 10;
+  width: 6px;
+  height: 6px;
+  left: -2px;
+  top: -2px;
+  background-color: grey;
+  border-radius: 4px 4px;
+}
+.tetromino {
+  border-top: 3px solid rgb(255, 0, 0);
+  border-left: 3px solid rgb(55, 0, 255);
+  border-bottom: 3px solid rgb(255, 0, 191);
+  border-right: 3px solid rgb(0, 255, 98);
+}
+.tetromino.ghost .sparkle {
+  opacity: 0;
+}
+.tetromino__i {
+  background-color: lightblue;
+}
+.tetromino__j {
+  background-color: rgb(0, 162, 255);
+}
+.tetromino__l {
+  background-color: rgb(255, 225, 0);
+}
+.tetromino__o {
+  background-color: lightgoldenrodyellow;
+}
+.tetromino__s {
+  background-color: greenyellow;
+}
+.tetromino__t {
+  background-color: purple;
+}
+.tetromino__z {
+  background-color: pink;
+}

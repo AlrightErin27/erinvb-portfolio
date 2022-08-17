@@ -2,19 +2,22 @@
 import { useGameOver } from "./hooks/useGameOver";
 
 import Menu from "./Menu";
+import GameOn from "./GameOn";
 
 function Game({ rows, columns }) {
   const [gameOver, setGameOver, resetGameOver] = useGameOver();
 
   function start() {
-    console.log("Started? ", gameOver);
+    setGameOver(false);
   }
 
   return (
     <div className="game">
-      <p>Rows: {rows}</p>
-      <p>Columns: {columns}</p>
-      <Menu onClick={start} />
+      {gameOver ? (
+        <Menu onClick={start} />
+      ) : (
+        <GameOn rows={rows} columns={columns} setGameOver={setGameOver} />
+      )}
     </div>
   );
 }
