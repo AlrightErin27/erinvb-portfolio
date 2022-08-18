@@ -1,7 +1,7 @@
 function BoardCell({ cell }) {
   return (
     <div className={`board-cell ${cell.className}`}>
-      <div className="sparkle">sparkle</div>
+      <div className="sparkle"></div>
     </div>
   );
 }
