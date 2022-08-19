@@ -64,11 +64,12 @@ font-family: 'Kiwi Maru', serif; */
 .board {
   background-color: rgba(0, 0, 0, 0.548);
   display: grid;
-  width: 43vw;
-  height: 86vh;
+  width: 26rem;
+  height: 52rem;
   border: 10px solid black;
   box-shadow: rgba(0, 0, 0, 0.485) 0px 5px 15px;
   border-radius: 10px;
+  padding: 0 5rem 0 5rem;
 }
 /* --------------BOARD CELL-------------- */
 .board-cell {
@@ -80,7 +81,7 @@ font-family: 'Kiwi Maru', serif; */
 
 /* --------------TETRIMINOS-------------- */
 .tetromino {
-  border: 3px solid rgb(0, 0, 0);
+  border: 1px solid rgba(40, 46, 44, 0.578);
 }
 .tetromino .sparkle {
   position: absolute;
@@ -104,7 +105,7 @@ font-family: 'Kiwi Maru', serif; */
   background-color: rgb(0, 255, 123);
 }
 .tetromino__o {
-  background-color: rgba(0, 13, 94, 0.663);
+  background-color: rgba(41, 66, 231, 0.952);
 }
 .tetromino__s {
   background-color: greenyellow;
@@ -167,4 +168,9 @@ font-family: 'Kiwi Maru', serif; */
   height: 8rem;
   border-radius: 10px;
   background-color: transparent;
+}
+/* --------------GAME CONTROLLER-------------- */
+.game-controller {
+  position: absolute;
+  top: -100em;
 }
