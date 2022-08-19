@@ -9,7 +9,7 @@ const buildPlayer = (previous) => {
     tetrominoes = [...previous.tetrominoes];
     tetrominoes.unshift(randomTetromino());
   } else {
-    tetrominoes = Array(5)
+    tetrominoes = Array(6)
       .fill(0)
       .map((_) => randomTetromino());
   }

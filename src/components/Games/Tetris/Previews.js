@@ -9,13 +9,11 @@ const Previews = ({ tetrominoes }) => {
     .reverse();
 
   return (
-    <div>
-      <>
-        {previewTetrominoes.map((tetromino, index) => (
-          <Preview tetromino={tetromino} index={index} key={index} />
-        ))}
-      </>
-    </div>
+    <>
+      {previewTetrominoes.map((tetromino, index) => (
+        <Preview tetromino={tetromino} index={index} key={index} />
+      ))}
+    </>
   );
 };
 export default React.memo(Previews);

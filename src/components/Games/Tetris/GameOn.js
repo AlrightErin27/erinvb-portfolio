@@ -15,7 +15,9 @@ function GameOn({ rows, columns, setGameOver }) {
     <div className="game-on">
       <Board board={board} />
       <GameStats gameStats={gameStats} />
-      <Previews tetrominoes={player.tetrominoes} />
+      <div className="previews-cont">
+        <Previews tetrominoes={player.tetrominoes} />
+      </div>
     </div>
   );
 }
