@@ -5,7 +5,7 @@ import Game from "./Game";
 function Tetris() {
   return (
     <div className="tetris">
-      Tetris
+      Jungle Tetris
       <Game rows={20} columns={10} />
     </div>
   );

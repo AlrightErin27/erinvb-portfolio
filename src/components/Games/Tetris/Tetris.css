@@ -9,12 +9,17 @@ font-family: 'Kiwi Maru', serif; */
   height: 120vh;
   width: 100%;
   background-color: rgb(56, 118, 120);
-  color: rgb(8, 248, 176);
-  font-size: 3rem;
+  background-image: url("./imgs/leaves1.jpeg");
+  color: rgb(38, 64, 53);
+  /* -webkit-text-stroke: 0.5px rgba(56, 101, 26, 0.918); */
+  font-size: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "DynaPuff", cursive;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.585),
+    0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px #ffffffd0, 0 0 40px #ffffff9d,
+    0 0 50px #ffffff88, 0 0 60px #ffffffb6, 0 0 70px #ffffff9f;
 }
 /* --------------GAME-------------- */
 .game {
@@ -42,14 +47,15 @@ font-family: 'Kiwi Maru', serif; */
   font-family: "Kiwi Maru", serif;
 }
 .menu button {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 0.5rem;
   font-family: "DynaPuff", cursive;
   border-radius: 15px;
   cursor: pointer;
   color: white;
   border: none;
-  background-color: rgb(23, 212, 155);
+  background-color: rgb(186, 203, 177);
+
   /* z-index: 100; */
 }
 .menu button:hover {
@@ -62,14 +68,14 @@ font-family: 'Kiwi Maru', serif; */
 }
 /* --------------BOARD-------------- */
 .board {
-  background-color: rgba(0, 0, 0, 0.548);
+  background-color: rgba(0, 0, 0, 0.743);
   display: grid;
   width: 26rem;
   height: 52rem;
-  border: 10px solid black;
-  box-shadow: rgba(0, 0, 0, 0.485) 0px 5px 15px;
+  border: 15px solid rgba(0, 0, 0, 0.849);
+  box-shadow: rgba(0, 0, 0, 0.582) 0px 5px 15px;
   border-radius: 10px;
-  padding: 0 5rem 0 5rem;
+  /* padding: 0 5rem 0 5rem; */
 }
 /* --------------BOARD CELL-------------- */
 .board-cell {
@@ -99,19 +105,19 @@ font-family: 'Kiwi Maru', serif; */
   background-color: rgb(0, 204, 204);
 }
 .tetromino__j {
-  background-color: rgb(0, 162, 255);
+  background-color: rgb(98, 209, 164);
 }
 .tetromino__l {
-  background-color: rgb(0, 255, 123);
+  background-color: rgb(255, 238, 0);
 }
 .tetromino__o {
-  background-color: rgba(41, 66, 231, 0.952);
+  background-color: rgba(0, 102, 255, 0.952);
 }
 .tetromino__s {
   background-color: greenyellow;
 }
 .tetromino__t {
-  background-color: rgb(221, 255, 255);
+  background-color: rgb(208, 0, 255);
 }
 .tetromino__z {
   background-color: rgb(240, 255, 192);
@@ -127,14 +133,18 @@ font-family: 'Kiwi Maru', serif; */
   right: 0;
   bottom: 0;
   text-align: left;
-  background-color: transparent;
+  text-shadow: none;
 }
 .game-stats {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.726);
   position: absolute;
-  width: 22vw;
+  width: 15vw;
+  right: 15rem;
+  border-radius: 10px;
   list-style-type: none;
+  border: 10px solid black;
   color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.799) 0px 5px 15px;
 }
 .game-stats li {
   background-color: transparent;
@@ -150,7 +160,7 @@ font-family: 'Kiwi Maru', serif; */
 /* --------------PREVIEW-------------- */
 .previews-cont {
   position: absolute;
-  left: 75vw;
+  left: 70vw;
   top: 5rem;
   background-color: transparent;
   display: flex;
@@ -159,6 +169,8 @@ font-family: 'Kiwi Maru', serif; */
 }
 .preview {
   background-color: transparent;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.936));
+  filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.971));
 }
 .preview-board {
   display: grid;
