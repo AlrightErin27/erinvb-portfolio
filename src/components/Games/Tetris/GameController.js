@@ -1,5 +1,7 @@
-import { Action, actionForKey } from "./business/Input";
+import { Action, actionForKey, actionIsDrop } from "./business/Input";
 import { playerController } from "./business/PlayerController";
+import { useInterval } from "./hooks/useInterval";
+import { useDropTime } from "./hooks/useDropTime";
 
 const GameController = ({
   board,
@@ -8,17 +10,37 @@ const GameController = ({
   setGameOver,
   setPlayer,
 }) => {
+  //set up so we can use unique speed dictated in game stats
+  const [dropTime, pauseDropTime, resumeDropTime] = useDropTime({
+    gameStats,
+  });
+
+  //set value for interval
+  useInterval(() => {
+    handleInput({ action: Action.SlowDrop });
+  }, dropTime);
+
   //Press Up Arrow
   function onKeyUp({ code }) {
-    //   if (action === Action.Quit) {
-    //     setGameOver(true);
-    //   }
+    const action = actionForKey(code);
+    if (actionIsDrop(action)) resumeDropTime();
   }
 
   //Press Down Arrow
   function onKeyDown({ code }) {
     const action = actionForKey(code);
-    handleInput({ action });
+    if (action === Action.Pause) {
+      if (dropTime) {
+        pauseDropTime();
+      } else {
+        resumeDropTime();
+      }
+    } else if (action === Action.Quit) {
+      setGameOver(true);
+    } else {
+      if (actionIsDrop(action)) pauseDropTime();
+      handleInput({ action });
+    }
   }
 
   function handleInput({ action }) {
