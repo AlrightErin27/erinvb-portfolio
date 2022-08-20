@@ -6,11 +6,11 @@ function GameStats({ gameStats }) {
 
   return (
     <ul className="game-stats game-stats__right">
-      <li>Level</li>
+      <li className="li-text">Level:</li>
       <li className="value">{level}</li>
-      <li>Lines to Level</li>
+      <li className="li-text">Lines to Level:</li>
       <li className="value">{linesToLevel}</li>
-      <li>Points</li>
+      <li className="li-text">Points:</li>
       <li className="value">{points}</li>
     </ul>
   );

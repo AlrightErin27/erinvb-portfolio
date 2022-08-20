@@ -2,6 +2,7 @@ import Board from "./Board";
 import GameStats from "./GameStats";
 import Previews from "./Previews";
 import GameController from "./GameController";
+import Key from "./Key";
 
 import { useBoard } from "./hooks/useBoard";
 import { useGameStats } from "./hooks/useGameStats";
@@ -23,6 +24,7 @@ function GameOn({ rows, columns, setGameOver }) {
   return (
     <div className="game-on">
       <Board board={board} />
+      <Key />
       <GameStats gameStats={gameStats} />
       <div className="previews-cont">
         <Previews tetrominoes={player.tetrominoes} />

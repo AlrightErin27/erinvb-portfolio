@@ -56,6 +56,7 @@ const GameController = ({
   return (
     <input
       autoFocus
+      onBlur={({ target }) => target.focus()}
       className="game-controller"
       type="text"
       onKeyDown={onKeyDown}
