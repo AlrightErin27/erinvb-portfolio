@@ -1,11 +1,14 @@
 import React from "react";
 
-function Menu({ onClick }) {
+function Menu({ onStart, onExit }) {
   return (
     <div className="menu">
       <div className="tetris-title">Jungle Tetris</div>
 
-      <button onClick={onClick}>start</button>
+      <div className="button-cont">
+        <button onClick={onStart}>start</button>
+        <button onClick={onExit}>exit</button>
+      </div>
     </div>
   );
 }

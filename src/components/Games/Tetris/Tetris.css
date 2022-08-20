@@ -37,6 +37,10 @@ font-family: 'Kiwi Maru', serif; */
 .menu {
   background-color: transparent;
   font-family: "Kiwi Maru", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .tetris-title {
   color: rgb(60, 105, 0);
@@ -47,13 +51,23 @@ font-family: 'Kiwi Maru', serif; */
     0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px #ffffffd0, 0 0 40px #ffffff9d,
     0 0 50px #ffffff88, 0 0 60px #ffffffb6, 0 0 70px #ffffff9f;
   background-color: transparent;
+  padding-bottom: 4rem;
+}
+.button-cont {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
 }
 .menu button {
   font-size: 3rem;
   padding: 1rem 3rem 1rem 3rem;
   font-family: "DynaPuff", cursive;
   border-radius: 15px;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   cursor: pointer;
   color: rgb(136, 255, 97);
   background-color: rgba(131, 210, 192, 0.742);

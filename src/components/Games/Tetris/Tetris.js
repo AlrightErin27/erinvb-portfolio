@@ -1,4 +1,4 @@
-import "./tetris.css";
+import "./Tetris.css";
 import Game from "./Game";
 
 function Tetris() {

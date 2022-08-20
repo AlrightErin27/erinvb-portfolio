@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Cone from "../Images/cone.png";
 
 function Projects() {
@@ -16,15 +16,15 @@ function Projects() {
       </>
       <br />
       <>
-        <NavLink to="/tictactoe" style={{ textDecoration: "none" }}>
+        <Link to="/tictactoe" style={{ textDecoration: "none" }}>
           Tic Tac Toe
-        </NavLink>
+        </Link>
       </>
       <br />
       <>
-        <NavLink to="/tetris" style={{ textDecoration: "none" }}>
+        <Link to="/tetris" style={{ textDecoration: "none" }}>
           Tetris
-        </NavLink>
+        </Link>
       </>
     </div>
   );
