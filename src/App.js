@@ -1,16 +1,12 @@
 // import { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import TicTacToe from "./components/Games/TicTacToe/TicTacToe";
+import Tetris from "./components/Games/Tetris/Tetris";
 
 function App() {
   return (
@@ -34,9 +30,11 @@ function App() {
           <Route path="/tictactoe">
             <TicTacToe />
           </Route>
-        </Switch>
 
-        {/* <Redirect to="/home" /> */}
+          <Route path="/tetris">
+            <Tetris />
+          </Route>
+        </Switch>
       </Router>
     </>
   );

@@ -211,6 +211,8 @@ nav {
 /* PROJECTS PAGE */
 .pro-con {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cone {
   background-color: transparent;

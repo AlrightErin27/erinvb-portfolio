@@ -1,4 +1,4 @@
-import React from "react";
+import Exit from "./Exit";
 
 function Result({ winner, reset }) {
   return (
@@ -8,9 +8,13 @@ function Result({ winner, reset }) {
       ) : (
         <p>🐾 cat's game! 🐾</p>
       )}
-      <button className="g-btn" onClick={reset}>
-        Play Again
-      </button>
+
+      <div className="btn-container">
+        <button className="g-btn" onClick={reset}>
+          Play Again
+        </button>
+        <Exit />
+      </div>
     </div>
   );
 }
