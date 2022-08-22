@@ -209,11 +209,29 @@ nav {
   background-color: transparent;
 }
 /* PROJECTS PAGE */
-.pro-con {
+.projects {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-.cone {
+.projects p {
+  font-size: 1rem;
   background-color: transparent;
+}
+.project-btn {
+  font-size: 3rem;
+  font-family: "Unica One", cursive;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 2rem;
+  color: white;
+  width: 16rem;
+  text-align: center;
+  background-color: maroon;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.518);
+}
+.project-btn:hover {
+  cursor: pointer;
 }
