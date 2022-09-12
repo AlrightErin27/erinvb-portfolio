@@ -1,3 +1,5 @@
+import { useHistory } from "react-router-dom";
+
 import resumePDF from "../Images/ResumeErinVanBrunt.pdf";
 import downloadIcon from "../Images/dl.webp";
 import linkedIcon from "../Images/linkedin.png";
@@ -5,6 +7,15 @@ import githubIcon from "../Images/github.png";
 import logo from "../Images/logo.png";
 
 function Resume() {
+  const history = useHistory();
+
+  function handleTTT() {
+    history.push("/tictactoe");
+  }
+  function handleTetris() {
+    history.push("/tetris");
+  }
+
   return (
     <>
       <div className="resume-page">
@@ -95,14 +106,12 @@ function Resume() {
             through agile software development & innovation, what the group
             members should focus on, & maintained efficiency.
           </p>
+
           {/* PROJECT 2 */}
           <div className="project-container">
-            <a
-              href="https://erin-van-brunt-portfolio.herokuapp.com/tictactoe"
-              className="project-title"
-            >
+            <div className="project-title" onClick={handleTTT}>
               Tic Tac Toe
-            </a>
+            </div>
             <a
               href="https://github.com/AlrightErin27/erinvb-portfolio/tree/main/src/components/Games/TicTacToe"
               className="project-link"
@@ -129,12 +138,9 @@ function Resume() {
           </p>
           {/* PROJECT 3 */}
           <div className="project-container">
-            <a
-              href="https://erin-van-brunt-portfolio.herokuapp.com/tetris"
-              className="project-title"
-            >
+            <div className="project-title" onClick={handleTetris}>
               Jungle Tetris
-            </a>
+            </div>
             <a
               href="https://github.com/AlrightErin27/erinvb-portfolio/tree/main/src/components/Games/Tetris"
               className="project-link"

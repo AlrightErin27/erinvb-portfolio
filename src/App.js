@@ -40,8 +40,6 @@ function App() {
             <Tetris />
           </Route>
         </Switch>
-
-        <Redirect to="/home" />
       </Router>
     </>
   );
