@@ -185,6 +185,7 @@ nav {
   font-family: inherit;
   color: rgb(0, 0, 123);
   font-weight: bold;
+  font-size: 1.33rem;
   line-height: 1.3rem;
 }
 .r-header {
@@ -207,7 +208,7 @@ nav {
 }
 .r-github-icon {
   height: 1.3rem;
-  filter: invert();
+  filter: invert(0);
   background-color: transparent;
 }
 .r-edu-local {
@@ -220,7 +221,21 @@ nav {
 .r-text {
   color: rgb(0, 0, 123);
   font-weight: bold;
+  font-size: 1.22rem;
   background-color: transparent;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+.project-title {
+  font-size: 1.5rem;
+}
+.project-tech {
+  font-weight: bold;
+}
+.project-p {
+  font-size: 1.22rem;
 }
 /* PROJECTS PAGE */
 .projects {

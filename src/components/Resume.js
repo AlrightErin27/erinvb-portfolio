@@ -55,17 +55,32 @@ function Resume() {
             Netlify, Git/Github, User Interface Design, Operational Analysis,
             Database Management, MacOS, Windows, Visual Studio Code
           </p>
+
           {/*~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~ */}
           <p className="r-header">Projects</p>
           {/* PROJECT 1 */}
-          <a href="https://castles-fi.herokuapp.com/login">The Castle Shop</a>
-          <a href="https://github.com/AlrightErin27/castlesFI">Github</a>
-          <a href="https://vimeo.com/741486139">Video Walk Through</a>
-          <p>
+          <div className="project-container">
+            <a
+              href="https://castles-fi.herokuapp.com/login"
+              className="project-title"
+            >
+              The Castle Shop
+            </a>
+            <a
+              href="https://github.com/AlrightErin27/castlesFI"
+              className="project-link"
+            >
+              Github
+            </a>
+            <a href="https://vimeo.com/741486139" className="project-link">
+              Video Walk Through
+            </a>
+          </div>
+          <p className="project-tech">
             Ruby on Rails, JS, React, HTML, CSS, Gemfile, Node.js, Sinatra,
             Postgres SQL, MVC Framework, Fetch
           </p>
-          <p>
+          <p className="project-p">
             • Manufactured table associations with foreign keys that involved
             many-to-many relations & one-to-many relationships. <br />•
             Fabricated migrations, seeds, database calls, & tables in rake
@@ -81,17 +96,30 @@ function Resume() {
             members should focus on, & maintained efficiency.
           </p>
           {/* PROJECT 2 */}
-          <a href="https://erin-van-brunt-portfolio.herokuapp.com/tictactoe">
-            Tic Tac Toe
-          </a>
-          <a href="https://github.com/AlrightErin27/erinvb-portfolio/tree/main/src/components/Games/TicTacToe">
-            Github
-          </a>
-          <a href="https://player.vimeo.com/video/741487103">
-            Video Walk Through
-          </a>
-          <p>Javascript Logic, HTML, CSS, React, JSX</p>
-          <p>
+          <div className="project-container">
+            <a
+              href="https://erin-van-brunt-portfolio.herokuapp.com/tictactoe"
+              className="project-title"
+            >
+              Tic Tac Toe
+            </a>
+            <a
+              href="https://github.com/AlrightErin27/erinvb-portfolio/tree/main/src/components/Games/TicTacToe"
+              className="project-link"
+            >
+              Github
+            </a>
+            <a
+              href="https://player.vimeo.com/video/741487103"
+              className="project-link"
+            >
+              Video Walk Through
+            </a>
+          </div>
+          <p className="project-tech">
+            Javascript Logic, HTML, CSS, React, JSX
+          </p>
+          <p className="project-p">
             • Designed & engineered a fully front-end game with innovative
             styling. <br />• Lifted state to track user's place in game & save
             user's winnings in a way that the data persists in a SQL database.{" "}
@@ -100,23 +128,39 @@ function Resume() {
             useHistory.
           </p>
           {/* PROJECT 3 */}
-          <a href="https://erin-van-brunt-portfolio.herokuapp.com/tetris">
-            Jungle Tetris
-          </a>
-          <a href="https://github.com/AlrightErin27/erinvb-portfolio/tree/main/src/components/Games/Tetris">
-            Github
-          </a>
-          <a href="https://player.vimeo.com/video/741488052">
-            Video Walk Through
-          </a>
-          <a href="https://player.vimeo.com/video/741488275">
-            Code Video Walk Through
-          </a>
-          <p>React, Javascript, HTML, CSS, Custom React Hooks, Game State</p>
-          <p>
+          <div className="project-container">
+            <a
+              href="https://erin-van-brunt-portfolio.herokuapp.com/tetris"
+              className="project-title"
+            >
+              Jungle Tetris
+            </a>
+            <a
+              href="https://github.com/AlrightErin27/erinvb-portfolio/tree/main/src/components/Games/Tetris"
+              className="project-link"
+            >
+              Github
+            </a>
+            <a
+              href="https://player.vimeo.com/video/741488052"
+              className="project-link"
+            >
+              Video Walk Through
+            </a>
+            <a
+              href="https://player.vimeo.com/video/741488275"
+              className="project-link"
+            >
+              Code Video Walk Through
+            </a>
+          </div>
+          <p className="project-tech">
+            React, Javascript, HTML, CSS, Custom React Hooks, Game State
+          </p>
+          <p className="project-p">
             • Created a single player, multi-level game that uses keyboard input
             to move tetrominoes across the board.
-            <br />• Constructed custome hooks, CSS animations, shared props,
+            <br />• Constructed custom hooks, CSS animations, shared props,
             controllers, useCallback, looped through cells to create grids, &
             useInterval, dynamic rendering to accomplish unique challenges
             within the game.
