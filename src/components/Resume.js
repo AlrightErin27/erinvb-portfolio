@@ -1,4 +1,3 @@
-
 import resumePDF from "../Images/ResumeErinVanBrunt.pdf";
 import downloadIcon from "../Images/dl.webp";
 import linkedIcon from "../Images/linkedin.png";
@@ -21,7 +20,6 @@ function Resume() {
               RESUME PDF
             </a>
           </div>
-
           <div className="r-top">
             {/*~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~ */}
             <p className="r-name">Erin Van Brunt</p>
@@ -50,12 +48,78 @@ function Resume() {
           {/*~~~~~~~~~~~~~~~~~~~~ SKILLS ~~~~~~~~~~~~~~~~~~~~ */}
           <p className="r-header">Skills</p>
           <p className="r-skills">
-            Full-stack, Javascript, Ruby, Rails, Python, HTML5, CSS3, Canvas,
-            API, RESTful Routing, MVC Framework, JSON, React.js, Axios, Fetch,
-            Active Record, Sinatra, VScode, MongoDB, SQLight, PostgresSQL,
-            Authorization, Node.js, Next.js, Heroku, Netlify, Git/Github, User
-            Interface Design, Operational Analysis, Database Management, MacOS,
-            Windows
+            Full-stack, Javascript, Ruby, Rails, Python, HTML5, CSS3, API,
+            RESTful Routing, MVC Framework, JSON, React.js, Axios, Fetch, Active
+            Record, Sinatra, VScode, MongoDB, Structured Query Language,
+            PostgresSQL, B-crypt, Authorization, Node.js, Next.js, Heroku,
+            Netlify, Git/Github, User Interface Design, Operational Analysis,
+            Database Management, MacOS, Windows, Visual Studio Code
+          </p>
+          {/*~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~ */}
+          <p className="r-header">Projects</p>
+          {/* PROJECT 1 */}
+          <a href="https://castles-fi.herokuapp.com/login">The Castle Shop</a>
+          <a href="https://github.com/AlrightErin27/castlesFI">Github</a>
+          <a href="https://vimeo.com/741486139">Video Walk Through</a>
+          <p>
+            Ruby on Rails, JS, React, HTML, CSS, Gemfile, Node.js, Sinatra,
+            Postgres SQL, MVC Framework, Fetch
+          </p>
+          <p>
+            • Manufactured table associations with foreign keys that involved
+            many-to-many relations & one-to-many relationships. <br />•
+            Fabricated migrations, seeds, database calls, & tables in rake
+            console terminal. <br />• Fetched data from back-end Ruby / sqlDB
+            app to a front-end React.js app kept in a second repository. <br />•
+            Operated JSON Web Tokens & B-crypt authenticate to safely store
+            user's data. <br />• Invented class & instance methods that endures
+            a session to keep user's collection. <br />• Coordinated &
+            controlled all Github merges & merge conflicts. This produced code
+            that was highly legible for all 3 students in the project. Used
+            scrum project management. <br />• Orchestrated product management,
+            through agile software development & innovation, what the group
+            members should focus on, & maintained efficiency.
+          </p>
+          {/* PROJECT 2 */}
+          <a href="https://erin-van-brunt-portfolio.herokuapp.com/tictactoe">
+            Tic Tac Toe
+          </a>
+          <a href="https://github.com/AlrightErin27/erinvb-portfolio/tree/main/src/components/Games/TicTacToe">
+            Github
+          </a>
+          <a href="https://player.vimeo.com/video/741487103">
+            Video Walk Through
+          </a>
+          <p>Javascript Logic, HTML, CSS, React, JSX</p>
+          <p>
+            • Designed & engineered a fully front-end game with innovative
+            styling. <br />• Lifted state to track user's place in game & save
+            user's winnings in a way that the data persists in a SQL database.{" "}
+            <br />• Utilized React's useState & useEffect to control game state.{" "}
+            <br />• Built links & page state using React-Router-Dom &
+            useHistory.
+          </p>
+          {/* PROJECT 3 */}
+          <a href="https://erin-van-brunt-portfolio.herokuapp.com/tetris">
+            Jungle Tetris
+          </a>
+          <a href="https://github.com/AlrightErin27/erinvb-portfolio/tree/main/src/components/Games/Tetris">
+            Github
+          </a>
+          <a href="https://player.vimeo.com/video/741488052">
+            Video Walk Through
+          </a>
+          <a href="https://player.vimeo.com/video/741488275">
+            Code Video Walk Through
+          </a>
+          <p>React, Javascript, HTML, CSS, Custom React Hooks, Game State</p>
+          <p>
+            • Created a single player, multi-level game that uses keyboard input
+            to move tetrominoes across the board.
+            <br />• Constructed custome hooks, CSS animations, shared props,
+            controllers, useCallback, looped through cells to create grids, &
+            useInterval, dynamic rendering to accomplish unique challenges
+            within the game.
           </p>
           {/*~~~~~~~~~~~~~~~~~~ EXPERIENCE ~~~~~~~~~~~~~~~~~~ */}
           <p className="r-header">Professional Experience</p>
@@ -81,9 +145,7 @@ function Resume() {
             & dependability to the environment.
           </p>
           {/*++++++ MASK DESIGN ++++++ */}
-          <p className="r-subheader">
-            Mask Designer / Layout Engineer (2011-2015)
-          </p>
+          <p className="r-subheader">Layout Engineer (2011-2015)</p>
           <p className="r-edu-local">Analog Devices, San Jose, CA</p>
           <p className="r-text">
             • Yielded analog & digital mask designs for integrated circuits in
