@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Logo from "../Images/logo.png";
+import forest from "../Images/forestint.jpg";
 
 function Home() {
   // Invert logo
@@ -11,6 +12,9 @@ function Home() {
 
   return (
     <div className="Home">
+      <div id="forest-container">
+        <img src={forest} alt="forest" id="background-forest" />
+      </div>
       {/* HEADER */}
       <div className="H-header">
         Welcome to <p id="H-header-p">Erin Van Brunt's</p> Portfolio
@@ -46,7 +50,7 @@ function Home() {
           )}
         </div>
 
-        <ul>
+        {/* <ul>
           <label id="H-list-title"> APP created with:</label>
           <br />
           <li>React | </li>
@@ -65,7 +69,7 @@ function Home() {
           <li>Validations | </li>
           <li>Heroku Deployment | </li>
           <li>Github | </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

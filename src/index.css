@@ -7,15 +7,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 /* font-family: 'Unica One', cursive; */
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
-/* font-family: 'Playfair Display', serif; */
+/* 🌈-------------------🌈 COLORS🌈-------------------🌈 */
+/* TEAL rgb(79, 117, 116) */
+/* DARKER TEAL rgb(36,68,68) */
+/* BRONZE rgb(138, 49, 16) */
+/* TERRACOTTA rgb(173, 146, 129) */
+/* LIGHT BLUE rgb(200, 251, 255) */
+/* BROWN rgb(89, 40, 9) */
 
 * {
-  background-color: rgba(254, 233, 226, 255);
   font-family: "Josefin Slab", serif;
 }
 
+#background-forest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: none;
+  height: 130vh;
+  width: 110vw;
+  filter: saturate(200%) brightness(70%) hue-rotate(20deg);
+  z-index: -1;
+}
+
 /* HOME PAGE */
+.Home {
+  margin: 0 9rem 0 9rem;
+}
 .H-header {
   font-size: 2rem;
   display: flex;
@@ -23,46 +41,62 @@
   justify-content: center;
   align-items: center;
   margin-top: 0rem;
+  color: white;
+  background-color: transparent;
 }
 #H-header-p {
   font-family: "Rock Salt", cursive;
   font-size: 2rem;
-  color: rgb(0, 42, 255);
+  color: rgb(200, 251, 255);
+  background-color: transparent;
 }
 #H-about {
-  text-align: center;
-  margin-top: -02.5rem;
-  font-size: 1.2rem;
-  font-family: "Playfair Display", serif;
-  padding: 0 5rem 0 5rem;
-  color: rgb(0, 24, 144);
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 0 70rem 0 6rem;
+  color: white;
+  position: absolute;
+  line-height: 1.2;
+  z-index: 10000;
+  background-color: transparent;
 }
 .H-lowerPg {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  background-color: transparent;
 }
 #H-logo-container {
   display: flex;
   justify-content: center;
   position: absolute center;
+  z-index: 1000;
+  background-color: transparent;
 }
 
 #H-logo {
   height: 40rem;
   width: 40rem;
   cursor: pointer;
+  opacity: 0.7;
+  background-color: transparent;
+  filter: hue-rotate(-10deg);
 }
 #H-logo-invert {
+  background-color: transparent;
   height: 40rem;
   width: 40rem;
-  filter: hue-rotate(210deg);
+
   cursor: pointer;
+  opacity: 0.7;
+  filter: invert(1) hue-rotate(10deg);
 }
-#H-list-title {
+/* #H-list-title {
   font-family: "Josefin Slab", serif;
   font-family: "Unica One", cursive;
   background-color: transparent;
+  position: absolute;
+  top: 4rem;
 }
 .Home ul {
   width: 25vw;
@@ -73,7 +107,7 @@
   font-family: "Unica One", cursive;
   display: inline;
   background-color: transparent;
-}
+} */
 .rotate {
   animation: rotation 20s infinite;
   z-index: 0;
@@ -104,6 +138,7 @@ nav {
   align-items: center;
   font-size: 1.5rem;
   background-color: rgba(240, 248, 255, 0.441);
+  z-index: 10009999;
 }
 .nav-link {
   padding: 0 4rem 0 4rem;
@@ -262,8 +297,8 @@ nav {
   width: 16rem;
   text-align: center;
   background-color: maroon;
-  box-shadow: 5px 10px rgba(0, 0, 0, 0.518);
 }
 .project-btn:hover {
   cursor: pointer;
+  filter: hue-rotate(80deg);
 }
