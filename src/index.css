@@ -55,6 +55,7 @@
   padding: 0 60rem 0 6rem;
   color: white;
   position: absolute;
+  min-width: 20vw;
   line-height: 1.2;
   font-weight: bold;
   z-index: 1;
