@@ -49,27 +49,6 @@ function Home() {
             />
           )}
         </div>
-
-        {/* <ul>
-          <label id="H-list-title"> APP created with:</label>
-          <br />
-          <li>React | </li>
-          <li>Ruby on Rails | </li>
-          <li>Javascript | </li>
-          <li>RESTful Routes | </li>
-          <li>CSS | </li>
-          <li>React Router Dom | </li>
-          <li>HTML | </li>
-          <li>JSX | </li>
-          <li>JSON API | </li>
-          <li>Bcrypt Authorization | </li>
-          <li>MVC Architecture | </li>
-          <li>Redux | </li>
-          <li>PostgresSQL DataBase | </li>
-          <li>Validations | </li>
-          <li>Heroku Deployment | </li>
-          <li>Github | </li>
-        </ul> */}
       </div>
     </div>
   );
